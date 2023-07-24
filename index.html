@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Social Book</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        
+        <nav>
+
+            <div class="nav-left">
+                <img src="/images/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><img src="/images/notification.png" alt="notification"></li>
+                    <li><img src="/images/inbox.png" alt="inbox"></li>
+                    <li><img src="/images/video.png" alt="videos"></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="/images/search.png" alt="search">
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="/images/profile-pic.png" alt="user profile">
+                </div>
+            </div>
+
+            <!--DROPDOWN SETTINGS MENU-->
+            <div class="settings-menu">
+
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+                
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="/images/profile-pic.png" alt="user image">
+                        <div>
+                            <p>Kerry Pecker</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="/images/feedback.png" alt="user image">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us improve the new design.</a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="settings-links">
+                        <img src="/images/setting.png" alt="settings" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="/images/arrow.png" alt="arrow" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="/images/help.png" alt="settings" class="settings-icon">
+                        <a href="#">Help & Support <img src="/images/arrow.png" alt="arrow" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="/images/display.png" alt="settings" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="/images/arrow.png" alt="arrow" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="/images/logout.png" alt="settings" class="settings-icon">
+                        <a href="#">Logout <img src="/images/arrow.png" alt="arrow" width="10px"></a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <!--Left Sidebar-->
+            <div class="left-sidebar">
+                <div class="imp-links">
+                    <a href="#"><img src="/images/news.png" alt="news"> Latest News</a>
+                    <a href="#"><img src="/images/friends.png" alt="friends"> Friends</a>
+                    <a href="#"><img src="/images/group.png" alt="group"> Groups</a>
+                    <a href="#"><img src="/images/marketplace.png" alt="marketplace"> Marketplace</a>
+                    <a href="#"><img src="/images/watch.png" alt="watch"> Watch</a>
+                    <a href="#">See More</a>
+                </div>
+
+                <div class="shortcut-links">
+                    <p>Your Shortcuts</p>
+                    <a href="#"><img src="images/shortcut-1.png" alt="shortcut">Web Developers</a>
+                    <a href="#"><img src="images/shortcut-2.png" alt="shortcut">Web Design Course</a>
+                    <a href="#"><img src="images/shortcut-3.png" alt="shortcut">Full Stack Development</a>
+                    <a href="#"><img src="images/shortcut-4.png" alt="shortcut">Website Experts</a>
+                </div>
+            </div>
+
+            <!--Main Content-->
+            <div class="main-content">
+                <div class="story-gallery">
+                    <div class="story story-1">
+                        <img src="/images/upload.png" alt="story">
+                        <p>Post Story</p>
+                    </div>
+                    <div class="story story-2">
+                        <img src="/images/member-1.png" alt="story">
+                        <p>Kerry Pecker</p>
+                    </div>
+                    <div class="story story-3">
+                        <img src="/images/member-2.png" alt="story">
+                        <p>Martin Boson</p>
+                    </div>
+                    <div class="story story-4">
+                        <img src="/images/member-3.png" alt="story">
+                        <p>Richard Rapport</p>
+                    </div>
+                    <div class="story story-5">
+                        <img src="/images/member-4.png" alt="story">
+                        <p>Alice Philanders</p>
+                    </div>
+                </div>
+
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="/images/profile-pic.png" alt="user image">
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Public <i class="fas fa-caret-down"></i></small>
+                        </div>
+                    </div>
+
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+
+                        <div class="add-post-links">
+                            <a href="#"><img src="/images/live-video.png" alt="ive video">Live Video</a>
+                            <a href="#"><img src="/images/photo.png" alt="ive video">Photo / Video</a>
+                            <a href="#"><img src="/images/feeling.png" alt="ive video">Feeling Activity</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Post 1-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="/images/profile-pic.png" alt="user image">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 24 2023, 13:40 pm</span>
+                            </div>
+                        </div>
+
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet blanditiis sit error ratione eius molestiae omnis ipsam, obcaecati aperiam quos libero ullam quidem porro ab, odio dolorem dolores, explicabo nemo? <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                    <img src="/images/feed-image-1.png" alt="feed-image" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="/images/like-blue.png" alt="likes">157</div>
+                            <div><img src="/images/comments.png" alt="likes">62</div>
+                            <div><img src="/images/share.png" alt="likes">22</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="/images/profile-pic.png" alt="user"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--Post 2-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="/images/member-3.png" alt="user image">
+                            <div>
+                                <p>Simons Williams</p>
+                                <span>June 23 2023, 5:22 am</span>
+                            </div>
+                        </div>
+
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                    <img src="/images/feed-image-2.png" alt="feed-image" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="/images/like-blue.png" alt="likes">2176</div>
+                            <div><img src="/images/comments.png" alt="likes">177</div>
+                            <div><img src="/images/share.png" alt="likes">68</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="/images/member-3.png" alt="user"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--POST 3-->
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="/images/member-4.png" alt="user image">
+                            <div>
+                                <p>Kerry Pecker</p>
+                                <span>June 24 2023, 7:01 pm</span>
+                            </div>
+                        </div>
+
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                    <img src="/images/feed-image-3.png" alt="feed-image" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="/images/like-blue.png" alt="likes">88</div>
+                            <div><img src="/images/comments.png" alt="likes">11</div>
+                            <div><img src="/images/share.png" alt="likes">4</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="/images/member-4.png" alt="user"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--POST 4-->
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="/images/member-5.png" alt="user image">
+                            <div>
+                                <p>Misha Azam</p>
+                                <span>June 24 2023, 8:37 pm</span>
+                            </div>
+                        </div>
+
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                    <img src="/images/feed-image-5.png" alt="feed-image" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="/images/like-blue.png" alt="likes">76</div>
+                            <div><img src="/images/comments.png" alt="likes">7</div>
+                            <div><img src="/images/share.png" alt="likes">2</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="/images/member-5.png" alt="user"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="load-more-btn">Load More</button>
+
+            </div>
+            <!--Right Sidebar-->
+            <div class="right-sidebar">
+
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See All</a>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>18</h3>
+                        <span>March</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Social Media</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>22</h3>
+                        <span>June</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Mobile Marketing</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-title">
+                    <h4>Advertisement</h4>
+                    <a href="#">Close</a>
+                </div>
+                <img src="/images/advertisement.png" alt="adverts" class="sidebar-ads">
+
+                <div class="sidebar-title">
+                    <h4>Conversations</h4>
+                    <a href="#">Hide Chat</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="/images/member-1.png" alt="online-friends">
+                    </div>
+                    <p>Alison Mina</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="/images/member-2.png" alt="online-friends">
+                    </div>
+                    <p>Jason Roy</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="/images/member-3.png" alt="online-friends">
+                    </div>
+                    <p>Kendall Morison</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright &copy; 2023 - Moiz Khan</p>
+        </div>
+        
+        <script src="/script.js" async defer></script>
+    </body>
+</html>
